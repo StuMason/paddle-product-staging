@@ -31,7 +31,7 @@
         <h1 class="cover-heading">Buy. This. Thing.</h1>
         <p class="lead">Having more things will make you happier. Having this thing will make you super happy. Buy it.</p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+          <a href="#!" class="paddle_button btn btn-lg btn-secondary" data-product="528196">Buy Now!</a>
         </p>
       </main>
 
@@ -47,7 +47,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script type="text/javascript">
+        Paddle.Setup({ vendor: 35630});
+        Paddle.environment.set("staging");
+    </script> 
   </body>
 </html>
